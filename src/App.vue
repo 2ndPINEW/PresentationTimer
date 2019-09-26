@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
       <v-btn
         text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://github.com/2ndPINEW/PresentationTimer.git"
         target="_blank"
       >
         <span class="mr-2">Latest Release</span>
@@ -21,14 +21,9 @@
 </template>
 
 <script>
-import Timer from './components/SpeachTimer';
-import Setting from './components/Setting';
-
 export default {
   name: 'App',
   components: {
-    Timer,
-    Setting
   },
   data: () => ({
     //
