@@ -1,7 +1,7 @@
 <template>
 <div id="timer">
     <v-container>
-    <div class="display-4 ma-4">登壇時間</div>
+    <div class="display-4 ma-4">発表時間</div>
     <v-card class="ma-4 text-center">
         <div class="time font-weight-bold">{{ formatTime }}</div>
     </v-card>
@@ -36,9 +36,11 @@ export default {
     },
     methods: {
         toSetting: function(){
+            clearInterval(this.timerObj);
             this.$router.push("/setting")
         },
         toNextTimer: function(){
+            clearInterval(this.timerObj);
             this.$router.push("/questiontimer")
         },
         count: function() {

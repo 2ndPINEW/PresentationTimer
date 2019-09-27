@@ -36,9 +36,11 @@ export default {
     },
     methods: {
         toSetting: function(){
+            clearInterval(this.timerObj);
             this.$router.push("/setting")
         },
         toNextTimer: function(){
+            clearInterval(this.timerObj);
             this.$router.push("/speachtimer")
         },
         count: function() {

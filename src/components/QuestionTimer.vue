@@ -36,9 +36,11 @@ export default {
     },
     methods: {
         toSetting: function(){
+            clearInterval(this.timerObj);
             this.$router.push("/setting")
         },
         toNextTimer: function(){
+            clearInterval(this.timerObj);
             this.$router.push("/waittimer")
         },
         count: function() {
@@ -50,6 +52,7 @@ export default {
             } else {
                 this.sec--;
             }
+            console.log(this.min +":" + this.sec);
         },
         start: function() {
             let self = this;

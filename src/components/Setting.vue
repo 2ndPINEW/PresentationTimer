@@ -73,7 +73,7 @@
             <v-btn
                 class="mx-4 mb-4"
                 v-on:click="toTimer"
-                >Go to Timer
+                >Start Timer
             </v-btn>
         </div>
     </v-container>
